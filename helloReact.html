@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello React</title>
+</head>
+<body>
+    <div id="root-react"></div>
+    <!-- <div class="title">Title React</div>
+    <img src="https://via.placeholder.com/150"/> -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        let helloVar = React.createElement('div',null,'Hello React');
+        let titleVar = React.createElement('div',{
+            className: 'title'
+        },'Title React');
+        let imgVar = React.createElement('img',{
+            src: 'https://via.placeholder.com/150'
+        });
+        let divComponent = React.createElement('div',null,helloVar,titleVar,imgVar);
+        const root = document.getElementById('root-react');
+        ReactDOM.render(divComponent,root);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        var tableElement = 
+        <table>
+            <tr>
+                <th>MonDay</th>
+                <th>TuesDay</th>
+                <th>Wednesday</th>
+                <th>Thurday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>Math,Physical,Literature,History</td>
+                <td>Math,Math,Literature,Literature</td>
+                <td>Geography,History,Music,Drawing</td>
+                <td>Sport</td>
+                <td>Chemistry,Chemistry,Biology,Biology,</td>
+                <td>Off</td>
+                <td>Off</td>
+            </tr>
+        </table>;
+
+        const root = document.getElementById('root');
+        ReactDOM.render(tableElement,root);
+
+
+
+    </script>
+</body>
+</html>
